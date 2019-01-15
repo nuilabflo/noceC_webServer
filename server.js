@@ -31,12 +31,12 @@ app.use((req, res, next)=>{
    next();
 })
 
-app.use((req,res)=>{
-  res.render('maintain.hbs',{
-    title: 'maintainance',
-    text:'please be patient. we will be back soon.'
-  })
-})
+// app.use((req,res)=>{
+//   res.render('maintain.hbs',{
+//     title: 'maintainance',
+//     text:'please be patient. we will be back soon.'
+//   })
+// })
 
 app.use(express.static(__dirname+'/public'));
 
